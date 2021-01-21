@@ -45,7 +45,7 @@ function hotelCost(days){
 }
 
 function megaFriend(friends){
-    var megaFriendName = '';
+    var megaFriendName = "";
     if (friends.length == 0) {
         console.log("You must provide at least one string in array");
     } else {
