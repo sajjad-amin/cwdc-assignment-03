@@ -46,10 +46,11 @@ function hotelCost(days){
 
 function megaFriend(friends){
     var megaFriendName = "";
-    if (friends.length == 0) {
-        console.log("You must provide at least one string in array");
+    if (typeof friends == "string" || friends.length < 2) {
+        console.log("You must provide an array, and array shud contain at least two item");
     } else {
         for (var i = 0; i < friends.length; i++) {
+
             if (megaFriendName.length < friends[i].length) {
                 megaFriendName = friends[i];
             }
